@@ -36,6 +36,8 @@ app.get("/app.css", function (req, res) {
 });
 
 app.use(require("./src/routes/articles"));
+app.use(require("./src/routes/assets"));
+app.use(require("./src/routes/menus"));
 
 app.listen(port, async () => {
   console.log(`Server is running on port: ${port}`);
